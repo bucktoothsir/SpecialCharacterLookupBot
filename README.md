@@ -6,3 +6,4 @@ Unfornately, it's not easy for us to learn them. These characters are not in the
 
 So I develop this tool to look up speical characters. just input any charcater and I'll return you the name.
 
+<img src="media/st1.png" width="80%" height="80%" />
