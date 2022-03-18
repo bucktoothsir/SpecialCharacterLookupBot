@@ -2,5 +2,5 @@
 .gitignore
 media
 README.md
-app/src/main/resources/config.properties
+app/src/main/resources
 
