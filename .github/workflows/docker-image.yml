@@ -17,8 +17,7 @@ jobs:
     
     - name: Build and push the Docker image
       run: |
-        docker login ghcr.io -u bucktoothsir --password-stdin ${{ secrets.TOKEN }}
-        make docker-login
+        docker login ghcr.io -u bucktoothsir -p ${{ secrets.TOKEN }}
         make docker-build
         make docker-push
 
