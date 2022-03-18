@@ -1,0 +1,6 @@
+.git
+.gitignore
+media
+README.md
+app/src/main/resources/config.properties
+

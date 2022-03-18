@@ -7,4 +7,3 @@ COPY . $APP_HOME
 
 RUN ./gradlew --no-daemon build
 
-ENTRYPOINT ["./gradlew","run"]
