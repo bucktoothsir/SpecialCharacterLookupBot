@@ -30,8 +30,6 @@ echo token=$bot_token > config.properties
 echo username=$bot_username >> config.properties
 
 # docker run
-sudo docker run -it --pull always --rm -v /home/ec2-user/bot/resources:/usr/app/app/src/main/resources  ghcr.io/bucktoothsir/special_char_bot:latest bash
-
-./gradlew run
+sudo docker run --pull always --rm -v $HOME/bot/resources:/usr/app/app/src/main/resources  ghcr.io/bucktoothsir/special_char_bot:latest
 ```
 
