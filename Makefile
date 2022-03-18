@@ -12,5 +12,8 @@ docker-tag:
 docker-publish:
 	docker image push ghcr.io/bucktoothsir/special_char_bot:latest
 	
+docker-login:
+	echo ${{ secrets.TOKEN }} docker login ghcr.io -u bucktoothsir --password-stdin
+	
 # push the container
 docker-push: docker-tag docker-publish
