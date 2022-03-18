@@ -21,4 +21,17 @@ make docker build
 
 # docker push
 make docker push
+
+#ssh to ec2
+
+mkdir bot/resources
+cd bot/resources
+echo token=$bot_token > config.properties
+echo username=$bot_username >> config.properties
+
+# docker run
+sudo docker run -it --pull always --rm -v /home/ec2-user/bot/resources:/usr/app/app/src/main/resources  ghcr.io/bucktoothsir/special_char_bot:latest bash
+
+./gradlew run
 ```
+
