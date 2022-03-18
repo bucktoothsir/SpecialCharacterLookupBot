@@ -3,13 +3,14 @@
 #
 # DOCKER TASKS
 # Build the container
-build:
+docker-build:
 	docker build -t special_char_bot:latest .
 
-tag:
+docker-tag:
 	docker image tag special_char_bot:latest ghcr.io/bucktoothsir/special_char_bot:latest
 
-publish:
+docker-publish:
 	docker image push ghcr.io/bucktoothsir/special_char_bot:latest
+	
 # push the container
-push: tag publish
+docker-push: docker-tag docker-publish
